@@ -1,0 +1,83 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+
+
+
+
+form input[type="text"], form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5C6BC0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3949AB;
+}
+
+
+
+
+
+
+
+.product-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-item button {
+    padding: 4x 4px;
+    background-color: #5C6BC0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-item button:hover {
+    background-color: #3949AB;
+}
+
+
+.refresh-button {
+    padding: 10px 20px;
+    background-color: #5C6BC0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.refresh-button:hover {
+    background-color: #3949AB;
+}

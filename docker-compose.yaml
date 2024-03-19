@@ -1,0 +1,33 @@
+version: '3'
+services:
+  db2:
+    image: leroyhubert/chadfood6:db2
+    ports:
+      - "5432:5432"
+    container_name: database2
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend1:
+    image: leroyhubert/chadfood6:backend1
+    ports:
+      - "4000:4000"
+    container_name: backend1
+    environment:
+      - NODE_ENV=development
+
+  backend2:
+    image: leroyhubert/chadfood6:backend2
+    ports:
+      - "3000:3000"
+    container_name: backend2
+  
+
+  frontend:
+    image: leroyhubert/chadfood6:frontend
+    ports:
+      - "4200:80"
+    container_name: chadFood6
+
+volumes:
+  pgdata:

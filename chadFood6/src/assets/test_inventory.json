@@ -1,0 +1,48 @@
+{
+    "food": [
+        {
+            "id": 1,
+            "name": "Pizza",
+            "size": "Large",
+            "price": 12.99,
+            "amount": 10
+        },
+        {
+            "id": 2,
+            "name": "Burger",
+            "size": "Medium",
+            "price": 8.99,
+            "amount": 15
+        },
+        {
+            "id": 3,
+            "name": "Salad",
+            "size": "Small",
+            "price": 6.99,
+            "amount": 5
+        }
+    ],
+    "beverages": [
+        {
+            "id": 1,
+            "name": "Coke",
+            "size": "Regular",
+            "price": 1.99,
+            "amount": 20
+        },
+        {
+            "id": 2,
+            "name": "Water",
+            "size": "500ml",
+            "price": 0.99,
+            "amount": 30
+        },
+        {
+            "id": 3,
+            "name": "Juice",
+            "size": "Large",
+            "price": 2.99,
+            "amount": 10
+        }
+    ]
+}

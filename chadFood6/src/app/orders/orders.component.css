@@ -1,0 +1,53 @@
+.container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 2em;
+  }
+  
+  .refresh-button, .add-button, .delete-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .refresh-button {
+    background-color: #4CAF50;
+  }
+  
+  .add-button {
+    background-color: #008CBA;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .orders-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-item {
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .order-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+

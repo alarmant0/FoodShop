@@ -1,0 +1,51 @@
+<div class="container">
+    <h1>Inventory</h1>
+  
+
+    <div class="flex-container">
+        <div class="column">
+    <div class="product-item">
+        <p><strong>Custom ID,</strong> 
+        <strong>Name,</strong> 
+        <strong>Size,</strong> 
+        <strong>Price,</strong> 
+        <strong>Amount</strong></p>
+    </div>
+
+    <div *ngFor="let product of products" class="product-item">
+        <p>{{ product.customId }}
+        {{ product.name }}
+        {{ product.size }}
+        {{ product.price }}
+        {{ product.amount }}
+        <button (click)="deleteProduct(product.customId)">Delete</button></p>
+    </div>
+    <button class="refresh-button" (click)="getProducts()">Refresh</button>
+        </div>
+
+
+
+        <div class="column">
+    <h2>Add Product</h2>
+    <form (submit)="addProduct({ name: name.value, size: size.value, price: +price.value, amount: +amount.value })">
+        <input #name type="text" placeholder="Name">
+        <input #size type="text" placeholder="Size">
+        <input #price type="number" placeholder="Price">
+        <input #amount type="number" placeholder="Amount">
+        <button type="submit">Add Product</button>
+    </form>
+  
+    <h2>Update Product</h2>
+    <form (submit)="updateProduct()">
+      <input [(ngModel)]="selectedProduct.customId" type="number" placeholder="Custom ID">
+      <input [(ngModel)]="selectedProduct.name" type="text" placeholder="Name">
+      <input [(ngModel)]="selectedProduct.size" type="text" placeholder="Size">
+      <input [(ngModel)]="selectedProduct.price" type="number" placeholder="Price">
+      <input [(ngModel)]="selectedProduct.amount" type="number" placeholder="Amount">
+      <button type="submit">Update Product</button>
+    </form>
+    
+        </div>
+    </div>
+
+  </div>

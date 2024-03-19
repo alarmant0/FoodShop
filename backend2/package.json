@@ -1,0 +1,14 @@
+{
+  "name": "backend2",
+  "version": "1.0.0",
+  "description": "Node.js backend service",
+  "main": "order.js",
+  "scripts": {
+    "start": "node order.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}

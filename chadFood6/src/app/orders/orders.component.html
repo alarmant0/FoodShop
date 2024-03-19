@@ -1,0 +1,16 @@
+<div class="container">
+    <h2 class="title">Orders</h2>
+    <button class="refresh-button" (click)="printOrders()">Refresh Orders</button>
+  
+    <ul class="orders-list">
+      <li class="order-item" *ngFor="let order of orders">
+        Order ID: {{order.order_id}}, Content: {{order.order_content}}, Price: {{order.total_price}}
+        <button class="delete-button" (click)="deleteOrder(order.order_id)">Delete</button>
+      </li>
+    </ul>
+  
+    <h2 class="title">Add Order</h2>
+    <textarea class="order-input" [(ngModel)]="newOrderContent" placeholder="Enter Order Content (items separated by commas)"></textarea>
+    <input class="order-input" [(ngModel)]="newOrderPrice" placeholder="Enter Order Price">
+    <button class="add-button" (click)="addOrder()">Add Order</button>
+</div>

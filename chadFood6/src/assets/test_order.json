@@ -1,0 +1,60 @@
+{
+    "orders": [
+        {
+            "id": 1,
+            "time": "2022-01-01T10:00:00",
+            "content": [
+                {
+                    "item": "Pizza",
+                    "quantity": 2,
+                    "price": 10.99
+                },
+                {
+                    "item": "Burger",
+                    "quantity": 1,
+                    "price": 5.99
+                },
+                {
+                    "item": "Salad",
+                    "quantity": 1,
+                    "price": 7.99
+                }
+            ],
+            "total_price": 35.96
+        },
+        {
+            "id": 2,
+            "time": "2022-01-02T12:30:00",
+            "content": [
+                {
+                    "item": "Pasta",
+                    "quantity": 1,
+                    "price": 8.99
+                },
+                {
+                    "item": "Garlic Bread",
+                    "quantity": 2,
+                    "price": 3.99
+                }
+            ],
+            "total_price": 16.97
+        },
+        {
+            "id": 3,
+            "time": "2022-01-03T18:45:00",
+            "content": [
+                {
+                    "item": "Sushi",
+                    "quantity": 3,
+                    "price": 12.99
+                },
+                {
+                    "item": "Miso Soup",
+                    "quantity": 2,
+                    "price": 2.99
+                }
+            ],
+            "total_price": 47.94
+        }
+    ]
+}
